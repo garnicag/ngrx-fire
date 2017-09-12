@@ -1,12 +1,12 @@
-import { Injectable }                 from '@angular/core';
-import { Store }                      from '@ngrx/store';
-import { Effect, Actions }            from '@ngrx/effects';
+import { Injectable } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Effect, Actions } from '@ngrx/effects';
 
-import * as firebase                  from 'firebase';
-import { AngularFireDatabase }        from 'angularfire2/database';
-import { AngularFireAuth }            from 'angularfire2/auth';
+import * as firebase from 'firebase';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuth } from 'angularfire2/auth';
 
-import { Observable }                 from 'rxjs/Observable';
+import { Observable } from 'rxjs/Observable';
 import { defer } from 'rxjs/observable/defer';
 import '../../utils/rxjs.operators';
 
@@ -46,7 +46,7 @@ export class UserFacade {
                    }
 
                })
-               .catch(err =>  Observable.of(new userActions.AuthError()) );
+               .catch(err => Observable.of(new userActions.AuthError()) );
 
 
     /**

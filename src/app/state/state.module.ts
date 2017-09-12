@@ -1,24 +1,24 @@
-import { NgModule }                  from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import { AngularFireModule }         from 'angularfire2';
+import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule }     from 'angularfire2/auth';
+import { AngularFireAuthModule }  from 'angularfire2/auth';
 
-import { EffectsModule }             from '@ngrx/effects';
-import { StoreModule }               from '@ngrx/store';
-import { StoreDevtoolsModule }       from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 // *************************
 // Custom Application imports
 // *************************
 
-import { postReducer }               from './posts/post.reducer';
-import { userReducer }               from './users/user.reducer';
+import { postReducer } from './posts/post.reducer';
+import { userReducer } from './users/user.reducer';
 
-import {UserFacade}                  from './users';
-import {PostsFacade}                 from './posts';
+import { UserFacade } from './users';
+import { PostsFacade } from './posts';
 
-import { environment }               from '../../environments/environment';
+import { environment } from '../../environments/environment';
 export const firebaseConfig = environment.firebaseConfig;
 
 @NgModule({

@@ -1,8 +1,8 @@
 export interface IUser {
-    uid:         string;
+    uid: string;
     displayName: string;
-    loading?:    boolean;
-    error?:      string;
+    loading?: boolean;
+    error?: string;
 }
 
 export class User {

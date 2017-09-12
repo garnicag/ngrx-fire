@@ -1,15 +1,14 @@
 import { Action } from '@ngrx/store';
 import { User } from './user.model';
 
-export const GET_USER               = '[Auth] Get user';
-export const AUTHENTICATED          = '[Auth] Authenticated';
-export const NOT_AUTHENTICATED      = '[Auth] Not Authenticated';
+export const GET_USER = '[Auth] Get user';
+export const AUTHENTICATED = '[Auth] Authenticated';
+export const NOT_AUTHENTICATED = '[Auth] Not Authenticated';
 
-export const GOOGLE_LOGIN           = '[Auth] Google login attempt';
-export const LOGOUT                 = '[Auth] Logout';
+export const GOOGLE_LOGIN = '[Auth] Google login attempt';
+export const LOGOUT = '[Auth] Logout';
 
-export const AUTH_ERROR             = '[Auth] Error';
-
+export const AUTH_ERROR = '[Auth] Error';
 
 /// Get User AuthState
 
